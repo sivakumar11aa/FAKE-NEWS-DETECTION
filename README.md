@@ -1,54 +1,114 @@
+# Fake News Detection using Machine Learning
 
-📰 Fake News Detection
-📌 Overview
+## 📌 Project Overview
 
-A machine learning–based web application that detects whether a news article is Fake or Real using NLP techniques. The model is deployed using Streamlit for real-time predictions.
+This project is a **Fake News Detection system** that classifies news articles as **Real** or **Fake** using Natural Language Processing (NLP) and Machine Learning techniques. The model is deployed as a **web application using Streamlit**, allowing users to input news text and get instant predictions.
 
-🚀 Key Features
+---
 
-NLP-based text preprocessing
+## 🧠 Problem Statement
 
-Machine learning classification
+With the rapid spread of misinformation online, identifying fake news has become a critical challenge. This project aims to build an automated system that can accurately detect fake news articles based on their textual content.
 
-Real-time prediction via web UI
+---
 
-End-to-end ML pipeline
+## 📊 Dataset
 
-🛠 Tech Stack
+* **Source:** Kaggle Fake News Dataset
+* **Content:** Labeled news articles (Real / Fake)
+* **Preprocessing:**
 
-Python, Scikit-learn
+  * Text cleaning
+  * Removal of stopwords
+  * TF-IDF vectorization
 
-Pandas, NumPy, NLTK
+---
 
-Streamlit
+## ⚙️ Technology Stack
 
-Joblib
+* **Programming Language:** Python
+* **Libraries:**
 
-⚙️ Workflow
+  * Scikit-learn
+  * Pandas
+  * NumPy
+  * Joblib
+  * Streamlit
+* **Model:** Logistic Regression
+* **Vectorization:** TF-IDF
 
-User inputs news text
+---
 
-Text is cleaned and vectorized
+## 🚀 Model Training & Performance
 
-ML model predicts Fake / Real
+* Algorithm: Logistic Regression
+* Feature Extraction: TF-IDF Vectorizer
+* Train-Test Split: 80:20
+* **Accuracy Achieved:** ~94%
 
-Result displayed instantly
+---
 
-🌐 Live Demo
+## 🌐 Web Application (Streamlit)
 
-🔗 https://fake-news-detection09.streamlit.app/
+### Features:
 
-▶️ Run Locally
-pip install -r requirements.txt
-streamlit run app.py
+* User-friendly interface
+* Accepts custom news article input
+* Displays prediction as **Real** or **Fake**
+* Shows dataset and model accuracy information
 
-📌 Outcome
+---
 
-Successfully classifies fake and real news
+## 🗂️ Project Structure
 
-Deployed and accessible as a web application
+```
+├── app.py                 # Streamlit application
+├── app.ipynb              # Model training notebook
+├── vectorizer.jb          # Saved TF-IDF vectorizer
+├── lr_model.jb            # Trained Logistic Regression model
+├── requirements.txt       # Project dependencies
+└── README.md              # Project documentation
+```
+
+---
+
+## ▶️ How to Run the Project
+
+1. Clone the repository
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the Streamlit app:
+
+   ```bash
+   streamlit run app.py
+   ```
+4. Open the browser and test news articles
+
+---
+
+## 📈 Outcome
+
+The system successfully classifies news articles with high accuracy and demonstrates the effective use of NLP and machine learning for real-world misinformation detection.
+
+---
 <img width="1918" height="965" alt="image" src="https://github.com/user-attachments/assets/f1f80676-f3d1-4b27-ba49-49d4a4c02e6b" />
 
-👤 Author
+## 🔮 Future Enhancements
 
-Siva Kumar
+* Add confidence score for predictions
+* Compare multiple ML models
+* Deploy using cloud platforms
+* Extend to multilingual fake news detection
+
+---
+
+## 👨‍💻 Author
+
+**Siva Kumar**
+
+---
+
+⭐ This project is suitable for **BTech placements and ML interviews**.
